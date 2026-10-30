@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IvoireConnect</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <header>
+      <div class="languages">
+        <button type="button" class="lang-btn" data-lang="fr">🇫🇷 Français</button>
+        <button type="button" class="lang-btn" data-lang="en">🇬🇧 English</button>
+      </div>
+      <h1>🇨🇮 IvoireConnect</h1>
+      <p data-i18n="tagline">Rapide • Simple • Fiable</p>
+    </header>
+    <section class="hero">
+      <h2 data-i18n="welcome">Bienvenue sur IvoireConnect !</h2>
+      <p data-i18n="intro">Votre connexion Internet simplifiée.</p>
+    </section>
+    <!-- CUSTOMER ORDER FORM -->
+    <section class="card">
+      <h2 data-i18n="buyTitle">Acheter des forfaits Internet</h2>
+      <label for="network" data-i18n="network">Choisir le réseau</label>
+      <select id="network" required>
+        <option value="" selected disabled>Choisir un réseau</option>
+        <option value="Orange">🟠 Orange Côte d'Ivoire</option>
+        <option value="MTN">🟡 MTN Côte d'Ivoire</option>
+        <option value="Moov">🔵 Moov Africa</option>
+      </select>
+      <label for="phone" data-i18n="phone">Numéro de téléphone</label>
+      <input
+        type="tel"
+        id="phone"
+        placeholder="Exemple : 0700000000"
+        maxlength="10"
+        inputmode="numeric"
+        required
+      >
+      <label data-i18n="bundle">Choisir un forfait</label>
+      <div class="bundles"></div>
+      <label for="payment" data-i18n="payment">Mode de paiement</label>
+      <select id="payment">
+        <option>Orange Money</option>
+        <option>MTN Money</option>
+        <option>Moov Money</option>
+      </select>
+      <button
+        type="button"
+        id="buyBtn"
+        class="buy-button"
+        data-i18n="continue"
+      >
+        CONTINUER
+      </button>
+      <div id="message"></div>
+    </section>
+    <!-- HOW IT WORKS -->
+    <section class="card">
+      <h2 data-i18n="how">Comment ça marche ?</h2>
+      <p data-i18n="step1">✓ Choisissez votre réseau</p>
+      <p data-i18n="step2">✓ Choisissez votre forfait</p>
+      <p data-i18n="step3">✓ Entrez votre numéro</p>
+      <p data-i18n="step4">✓ Suivez les instructions de paiement</p>
+    </section>
+    <footer>
+      <h3>IvoireConnect 🇨🇮</h3>
+      <p data-i18n="footer">Connecter la Côte d'Ivoire</p>
+      <small>© 2026 IvoireConnect</small>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

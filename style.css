@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f3f7f4;
+  color: #202820;
+  line-height: 1.6;
+}
+
+.app {
+  width: 100%;
+  max-width: 480px;
+  margin: auto;
+  padding: 15px;
+}
+
+header {
+  background: linear-gradient(135deg, #00843d, #006b32);
+  color: white;
+  text-align: center;
+  padding: 30px 15px;
+  border-radius: 18px;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 30px;
+  margin: 12px 0 5px;
+}
+
+header p {
+  font-size: 14px;
+}
+
+.languages {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.lang-btn {
+  border: none;
+  background: white;
+  color: #00843d;
+  padding: 9px 13px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.hero {
+  text-align: center;
+  padding: 20px 10px;
+}
+
+.hero h2 {
+  color: #00843d;
+  font-size: 22px;
+}
+
+.hero p {
+  color: #666;
+  margin-top: 5px;
+}
+
+.card {
+  background: white;
+  padding: 22px;
+  border-radius: 16px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+}
+
+.card h2 {
+  color: #00843d;
+  font-size: 21px;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin: 15px 0 7px;
+}
+
+select,
+input {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: #fff;
+  font-size: 15px;
+  outline: none;
+}
+
+select:focus,
+input:focus {
+  border-color: #00843d;
+}
+
+.bundles {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.bundle {
+  background: #f0f8f2;
+  color: #006b32;
+  border: 1px solid #cce5d3;
+  border-radius: 10px;
+  padding: 13px 8px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.bundle.active {
+  background: #00843d;
+  color: white;
+  border-color: #00843d;
+}
+
+.buy-button {
+  width: 100%;
+  margin-top: 22px;
+  padding: 16px;
+  background: #ff7900;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.buy-button:active {
+  transform: scale(0.98);
+}
+
+#message {
+  margin-top: 15px;
+  text-align: center;
+  font-weight: bold;
+  overflow-wrap: anywhere;
+}
+
+#message a {
+  display: inline-block;
+  margin-top: 12px;
+  background: #25d366;
+  color: white;
+  text-decoration: none;
+  padding: 13px 18px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  padding: 25px 10px;
+  color: #666;
+}
+
+footer h3 {
+  color: #00843d;
+  margin-bottom: 5px;
+}
+
+footer small {
+  display: block;
+  margin-top: 10px;
+}
+
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+@media (max-width: 350px) {
+  .bundles {
+    grid-template-columns: 1fr;
+  }
+}
